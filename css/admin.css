@@ -1,0 +1,240 @@
+@charset "utf-8";
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Raleway", sans-serif;
+	font-weight: 100;
+}
+
+.button {
+	background: #d82121;
+	clear: both;
+	color: white;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	-webkit-transition: background 0.3s ease;
+	-moz-transition: background 0.3s ease;
+	-ms-transition: background 0.3s ease;
+	-o-transition: background 0.3s ease;
+	transition: background 0.3s ease;
+}
+
+.button:hover {
+	background: #bb1d1d;
+}
+
+html body {
+	background: #fafafa;
+	font-family: "Helvetica", "Arial", sans-serif;
+	min-width: 320px;
+}
+
+html body hr {
+	border-top: 1px solid black;
+	border-bottom: 1px solid white;
+	display: block;
+	box-shadow: 0;
+}
+
+html body header {
+	background: #d82121;
+	font-family: "Raleway", sans-serif;
+	height: 80px;
+}
+
+html body header #logo {
+	margin: 13px;
+}
+
+html body header #admin-account {
+	float: right;
+}
+
+html body header #admin-account a {
+	background: transparent;
+	color: white;
+	display: block;
+	height: 80px;
+	padding-top: 10px;
+	text-align: center;
+	width: 80px;
+	-webkit-transition: background 0.3s ease;
+	-moz-transition: background 0.3s ease;
+	-ms-transition: background 0.3s ease;
+	-o-transition: background 0.3s ease;
+	transition: background 0.3s ease;
+}
+
+html body header #admin-account a:hover {
+	background: rgba(255, 255, 255, 0.3);
+}
+
+html body header #admin-account a i {
+	font-size: 36px;
+}
+
+html body nav {
+	background: #444444;
+	width: 250px;
+	height: calc(100% - 80px);
+	float: left;
+}
+
+html body nav ul {
+	margin: 0;
+	text-align: left;
+	list-style-type: none;
+}
+
+html body nav ul li {
+	border-bottom: 1px solid #666666;
+	display: block;
+	width: 250px;
+}
+
+html body nav ul li a {
+	background: #444444;
+	color: white;
+	display: block;
+	padding: 20px;
+	text-decoration: none;
+	-webkit-transition: background 0.3s ease, color 0.3s ease, padding 0.3s ease;
+	-moz-transition: background 0.3s ease, color 0.3s ease, padding 0.3s ease;;
+	-ms-transition: background 0.3s ease, color 0.3s ease, padding 0.3s ease;;
+	-o-transition: background 0.3s ease, color 0.3s ease, padding 0.3s ease;;
+	transition: background 0.3s ease, color 0.3s ease, padding 0.3s ease;;
+}
+
+html body nav ul li a:hover {
+	background: #666666;
+	color: #dddddd;
+	padding: 20px 20px 20px 40px;
+}
+
+html body nav ul li a:focus {
+	background: #d82121;
+	color: white;
+	padding: 20px 20px 20px 40px;
+}
+
+html body #admin-area {
+	float: left;
+	padding: 20px;
+}
+
+html body footer {
+	background: #eeeeee;
+	font-family: "Raleway", sans-serif;
+	margin-top: 60px;
+}
+
+html body footer nav {
+	padding: 60px 0;
+}
+
+html body footer nav ul {
+	list-style-type: none;
+	margin: 0;
+	text-align: center;
+}
+
+html body footer nav ul li {
+	display: inline-block;
+	padding: 0 27px;
+}
+
+html body footer nav ul li a {
+	color: #888888;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	-webkit-transition: color 0.3s ease;
+	-moz-transition: color 0.3s ease;
+	-ms-transition: color 0.3s ease;
+	-o-transition: color 0.3s ease;
+	transition: color 0.3s ease;
+}
+
+html body footer nav ul li a:hover {
+	color: #d82121;
+}
+
+html body footer #disclaimer {
+	background: rgba(0, 0, 0, 0.7);
+	padding: 10px 0;
+	text-align: center;
+}
+
+html body footer #disclaimer p {
+	color: white;
+	margin: 0;
+}
+
+html body footer #contact {
+	text-align: center;
+	color: #888888;
+}
+
+html body footer #contact a {
+	color: #888888;
+	text-decoration: underline;
+}
+
+/* medium-large Foundation breakpoint */
+@media screen and (max-width: 1023px) {
+	html body header #search {
+		padding-top: 10px;
+	}
+	
+	html body header #account {
+		padding-top: 0;
+		margin-top: -20px;
+	}
+	
+	html body header nav {
+		margin-top: -6px;
+		font-size: 12px;
+	}
+	
+	html body header nav ul li a {
+		letter-spacing: 2px;
+	}
+	
+	html body footer {
+	    margin-top: 30px;
+	}
+	
+	html body footer nav {
+	    padding: 30px 0;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	html body header nav ul li a {
+		letter-spacing: 1px;
+	}
+}
+
+/* small-medium Foundation breakpoint */
+@media screen and (max-width: 640px) {
+	html body header #logo img {
+		max-width: 85%;
+	}
+	
+	html body header nav {
+		padding: 20px 0;
+		font-size: 16px;
+	}
+	
+	html body header nav ul {
+		border-right: 1px solid black;
+	}
+	
+	html body header #account .account-link {
+		clear: both;
+		padding: 0;
+		width: 100%;
+	}
+	
+	html body header #account .account-link:first-child {
+		padding-top: 15px;
+	}
+}
