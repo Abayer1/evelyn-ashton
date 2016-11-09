@@ -1,7 +1,6 @@
 <?php include "includes/header.php"; ?>
 
 <?php
-
 	$sql = "SELECT product_name, description, category, sku, stock, cost, price, product_image, weight, size, rating FROM products WHERE sku = '" . $_GET["sku"] . "'";
 	$result = $connection->query($sql);
 	
@@ -40,6 +39,16 @@
 		}
 		
 		print("</div></section>");
+		/*if ($_SESSION['logged_in_user_access'] == 'admin' | $_SESSION['logged_in_user_access'] == 'priv'){
+				print("<section class='row'>");
+					print("<div class='small-12 medium-2 columns'>");
+						print("<p>Update</p>");
+					print("</div>");
+					print("<div class='small-12 medium-2 columns'>");
+						print("<p>delete</p>");
+					print("</div>");
+				print("</section>");	
+		}*/
 		
 	} else {
 		print("<section><div class='row'><div class='columns text-center'><h1>Sorry, we couldn't find the page you're looking for.</h1><h3>Please try clicking one of the links above.</h3></div></div></section>");

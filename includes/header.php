@@ -1,4 +1,8 @@
-<?php include "includes/scripts.php"; ?>
+
+<?php 
+	session_start();
+	include "scripts.php"; 
+?>
 
 <!doctype html>
 <html>
@@ -13,6 +17,7 @@
 		<link rel="stylesheet" href="css/foundation-icons.css" />
 		<link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700" rel="stylesheet">
 		<link rel="stylesheet" href="css/styles.css">
+        <script src="js/validate_user_creation.js" language="javascript"></script>
 	</head>
 	<body>
 		<header class="hide-for-small-only">
